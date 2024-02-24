@@ -8,7 +8,7 @@ let port = process.env.PORT || 8005;
 
 app.use(express.static("public_html"));
 
-//DB MySQL 정보 입력
+//DB MySQL 정보 입력, DB 지정하지 않음
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
